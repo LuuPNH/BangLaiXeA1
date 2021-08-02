@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:alpha="1"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/custom_select"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="22dp"
+            android:text="Chọn thể loại"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#000" />
+
+        <Button
+            android:id="@+id/btn_select1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Lý thuyết"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#000" />
+
+        <Button
+            android:id="@+id/btn_select2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Biển báo"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#000" />
+
+        <Button
+            android:id="@+id/btn_select3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Sa hình"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#000" />
+
+        <Button
+            android:id="@+id/btn_cancels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="#275ee9"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

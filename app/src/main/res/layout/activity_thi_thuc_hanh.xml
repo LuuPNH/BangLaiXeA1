@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThiThucHanhActivity">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="SƠ ĐỒ THI SÁT HẠCH LÁI XE A1, A2"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/sahinh" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="17dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="NỘI DUNG 4 BÀI SA HÌNH SÁT HẠCH LÁI XE A1, A2"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:paddingLeft="17dp"
+                android:text="Bài số 1: Lái xe theo vòng số 8\n\nBài số 2: Lái xe trên đường thẳng\n\nBài số 3: Lái xe trên đường ngoằn ngoèo\n\nBài số 4: Lái xe trên đường gồ ghề"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:paddingLeft="17dp"
+                android:text="Các lỗi bị trừ điểm:"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:paddingLeft="17dp"
+                android:text="Điểm tối thiểu để đạt là 80/100."
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:paddingLeft="17dp"
+                android:text="- Trừ 5 điểm: cán vạch, chết máy, chân chạm đất\n\n- Trừ 25 điểm - loại trực tiếp: học viên để té xe hoặc đi sai hình (đi ngược vòng) hoặc sẽ bị lọa trực tiếp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="17dp"
+                android:layout_marginTop="25dp"
+                android:text="VÍ DỤ VỀ THI SA HÌNH BẰNG LÁI A1"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/a" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

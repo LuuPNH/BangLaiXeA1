@@ -1,0 +1,2752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BienBaoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Hãy chọn loại biển báo mà bạn muốn học:"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/Layout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnNguyHiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Nguy hiểm"
+
+                />
+
+            <Button
+                android:id="@+id/btnCam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Cấm" />
+
+            <Button
+                android:id="@+id/btnHieuLenh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Hiệu lệnh" />
+
+            <Button
+                android:id="@+id/btnChiDan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Chỉ dẫn" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_BBNguyHiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Loại biển báo được hiển thị"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+        <ScrollView
+            android:id="@+id/View_BBNguyHiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                //1
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao1" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Biển báo giao nhau có tín hiệu đền" />
+                </TableRow>
+                //2
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao2" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Biển báo giao nhau với đường ưu tiên" />
+                </TableRow>
+                //3
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao3" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Biển báo giao nhau với đường ưu tiên. Gặp biển này đuoc ưu tiên đi trước." />
+                </TableRow>
+                //4
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao4" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Biển báo giao nhau với đường không ưu tiên bên trái" />
+                </TableRow>
+                //5
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao5" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu người đi bộ qua đường. Gặp biển này chủ động giảm tốc độ." />
+                </TableRow>
+                //6
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao6" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường cao tốc phía trước." />
+                </TableRow>
+                //7
+                //1
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao7" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường hai chiều." />
+                </TableRow>
+                //2
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao8" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu giao nhau với đường hai chiều." />
+                </TableRow>
+                //3
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao9" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báp hiệu giao nhau với đường sắt có rào chắn" />
+                </TableRow>
+                //4
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao10" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường sắt giao nhau với đường bộ không có rào chắn." />
+                </TableRow>
+                //5
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao11" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Đường sắt giao với đường bộ khong rào chắn" />
+                </TableRow>
+                //6
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao12" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu giao nhau với đường cùng cấp." />
+                </TableRow>
+                /////////
+                //1
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao13" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu giao nhau với đường cùng cấp bên trái." />
+                </TableRow>
+                //2
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao14" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường trơn trượt." />
+                </TableRow>
+                //3
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao15" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đoạn đường hay xảy ra tai nạn" />
+                </TableRow>
+                //4
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao16" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường đôi" />
+                </TableRow>
+                //5
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao17" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu hết đường đôi." />
+                </TableRow>
+                //6
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao18" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu phía trước có chướng ngại vật." />
+                </TableRow>
+                //7
+                //1
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao19" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu chướng ngại vật bên phải." />
+                </TableRow>
+                //2
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao20" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu cửa chui" />
+                </TableRow>
+                //3
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao21" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường hẹp bên trái." />
+                </TableRow>
+                //4
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao22" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường hẹp bên phải." />
+                </TableRow>
+                //5
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView26"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao23" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường hẹp hai bên." />
+                </TableRow>
+                //6
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao24" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu giảm tốc độ" />
+                </TableRow>
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/View_BBCam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    //1
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao28" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm tất cả các loại xe cơ giới và xe thô sơ. Không cấm xe ưu tiên." />
+                    </TableRow>
+                    //2
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao29" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm xe ngược chiều. Không cấm xe ưu tiên." />
+                    </TableRow>
+                    //3
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao30" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Dừng lại kể cả xe ưu tiên." />
+                    </TableRow>
+                    //4
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao31" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm người đi bộ." />
+                    </TableRow>
+                    //5
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView21"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao45" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Báo hiệu phía trước có chướng ngại vật." />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao32" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm đi xe đạp." />
+                    </TableRow>
+                    //6
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao33" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Báo hiệu đường cao tốc phía trước."
+                            tools:text="Cấm xe mô tô 2 3 bánh. Không cấm xe gắn máy." />
+                    </TableRow>
+                    //7
+                    //1
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao34" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm ô tô từ 3 bánh trở lên. Không cấm xe ưu tiên và xe 2 bánh" />
+                    </TableRow>
+                    //2
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao35" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm xe tải. Không cấm xe con." />
+                    </TableRow>
+                    //3
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao36" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm xe máy kéo. Không cấm xe tải, xe con." />
+                    </TableRow>
+                    //4
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao37" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cám xe kéo moóc. Không cấm xe không kéo moóc." />
+                    </TableRow>
+                    //5
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao38" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm xe ô tô và mô tô. Không cấm xe 2 3 bánh" />
+                    </TableRow>
+                    //6
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao39" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm rẽ trái. Cấm quay đầu." />
+                    </TableRow>
+                    /////////
+                    //1
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao40" />
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm quay đầu. Được phép rẽ trái." />
+                    </TableRow>
+                    //2
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao41" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm ô tô tải vượt. Không cấm xe con và xe khách." />
+                    </TableRow>
+                    //3
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao42" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm vượt." />
+                    </TableRow>
+                    //4
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao43" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm bóp còi." />
+                    </TableRow>
+                    //5
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView20"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao44" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Giảm tốc độ nhường đường cho xe cơ giới qua đường hẹp." />
+                    </TableRow>
+                    //6
+
+                    //7
+                    //1
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao45" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Hạn chế trọng lương toàn bộ xe và hàng." />
+                    </TableRow>
+                    //2
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView23"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao46" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Hạn chết trọng lương trên trục xe dưới 7 tấn." />
+                    </TableRow>
+                    //3
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView24"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao47" />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Hạn chết chiều cao yoàn bộ xe và hàng." />
+                    </TableRow>
+                    //4
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView25"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao48" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cự li tối thiểu giữa hai xe." />
+                    </TableRow>
+                    //5
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView26"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao49" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm đỗ xe. Được phép dừng xe." />
+                    </TableRow>
+                    //6
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao50" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cám đỗ xe. Cấm dừng xe." />
+                    </TableRow>
+                    //4
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView25"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao51" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Báo hiệu đường hẹp bên phải." />
+                    </TableRow>
+                    //5
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView26"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao52" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Tốc độ tối đa cho phép." />
+                    </TableRow>
+                    //6
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao53" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Hết hạn chế tốc độ tối đa." />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao54" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Hết mọi lệnh cấm." />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao55" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Hết cấm vượt."
+                            android:visibility="visible" />
+                    </TableRow>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/View_BBHieuLenh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    //1
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao28" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm tất cả các loại xe cơ giới và xe thô sơ. Không cấm xe ưu tiên." />
+                    </TableRow>
+                    //2
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao29" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm xe ngược chiều. Không cấm xe ưu tiên." />
+                    </TableRow>
+                    //3
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao30" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Dừng lại kể cả xe ưu tiên." />
+                    </TableRow>
+                    //4
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao31" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm người đi bộ." />
+                    </TableRow>
+                    //5
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView21"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao45" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Báo hiệu phía trước có chướng ngại vật." />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao32" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm đi xe đạp." />
+                    </TableRow>
+                    //6
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao33" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Báo hiệu đường cao tốc phía trước."
+                            tools:text="Cấm xe mô tô 2 3 bánh. Không cấm xe gắn máy." />
+                    </TableRow>
+                    //7
+                    //1
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao34" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm ô tô từ 3 bánh trở lên. Không cấm xe ưu tiên và xe 2 bánh" />
+                    </TableRow>
+                    //2
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao35" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm xe tải. Không cấm xe con." />
+                    </TableRow>
+                    //3
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao36" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm xe máy kéo. Không cấm xe tải, xe con." />
+                    </TableRow>
+                    //4
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao37" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cám xe kéo moóc. Không cấm xe không kéo moóc." />
+                    </TableRow>
+                    //5
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao38" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm xe ô tô và mô tô. Không cấm xe 2 3 bánh" />
+                    </TableRow>
+                    //6
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao39" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm rẽ trái. Cấm quay đầu." />
+                    </TableRow>
+                    /////////
+                    //1
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao40" />
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm quay đầu. Được phép rẽ trái." />
+                    </TableRow>
+                    //2
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao41" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm ô tô tải vượt. Không cấm xe con và xe khách." />
+                    </TableRow>
+                    //3
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao42" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm vượt." />
+                    </TableRow>
+                    //4
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao43" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm bóp còi." />
+                    </TableRow>
+                    //5
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView20"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao44" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Giảm tốc độ nhường đường cho xe cơ giới qua đường hẹp." />
+                    </TableRow>
+                    //6
+
+                    //7
+                    //1
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao45" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Hạn chế trọng lương toàn bộ xe và hàng." />
+                    </TableRow>
+                    //2
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView23"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao46" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Hạn chết trọng lương trên trục xe dưới 7 tấn." />
+                    </TableRow>
+                    //3
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView24"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao47" />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Hạn chết chiều cao yoàn bộ xe và hàng." />
+                    </TableRow>
+                    //4
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView25"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao48" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cự li tối thiểu giữa hai xe." />
+                    </TableRow>
+                    //5
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView26"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao49" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cấm đỗ xe. Được phép dừng xe." />
+                    </TableRow>
+                    //6
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao50" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Cám đỗ xe. Cấm dừng xe." />
+                    </TableRow>
+                    //4
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:id="@+id/imageView25"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao51" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Báo hiệu đường hẹp bên phải." />
+                    </TableRow>
+                    //5
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView26"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao52" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Tốc độ tối đa cho phép." />
+                    </TableRow>
+                    //6
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao53" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Hết hạn chế tốc độ tối đa." />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao54" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Hết mọi lệnh cấm." />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/bienbao55" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Hết cấm vượt."
+                            android:visibility="visible" />
+                    </TableRow>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/View_BBChiDan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                //1
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao1" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Biển báo giao nhau có tín hiệu đền" />
+                </TableRow>
+                //2
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao2" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Biển báo giao nhau với đường ưu tiên" />
+                </TableRow>
+                //3
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao3" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Biển báo giao nhau với đường ưu tiên. Gặp biển này đuoc ưu tiên đi trước." />
+                </TableRow>
+                //4
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao4" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Biển báo giao nhau với đường không ưu tiên bên trái" />
+                </TableRow>
+                //5
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao5" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu người đi bộ qua đường. Gặp biển này chủ động giảm tốc độ." />
+                </TableRow>
+                //6
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao6" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường cao tốc phía trước." />
+                </TableRow>
+                //7
+                //1
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao7" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường hai chiều." />
+                </TableRow>
+                //2
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao8" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu giao nhau với đường hai chiều." />
+                </TableRow>
+                //3
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao9" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báp hiệu giao nhau với đường sắt có rào chắn" />
+                </TableRow>
+                //4
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao10" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường sắt giao nhau với đường bộ không có rào chắn." />
+                </TableRow>
+                //5
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao11" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Đường sắt giao với đường bộ khong rào chắn" />
+                </TableRow>
+                //6
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao12" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu giao nhau với đường cùng cấp." />
+                </TableRow>
+                /////////
+                //1
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao13" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu giao nhau với đường cùng cấp bên trái." />
+                </TableRow>
+                //2
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao14" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường trơn trượt." />
+                </TableRow>
+                //3
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao15" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đoạn đường hay xảy ra tai nạn" />
+                </TableRow>
+                //4
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao16" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường đôi" />
+                </TableRow>
+                //5
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao17" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu hết đường đôi." />
+                </TableRow>
+                //6
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao18" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu phía trước có chướng ngại vật." />
+                </TableRow>
+                //7
+                //1
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao19" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu chướng ngại vật bên phải." />
+                </TableRow>
+                //2
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao20" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu cửa chui" />
+                </TableRow>
+                //3
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao21" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường hẹp bên trái." />
+                </TableRow>
+                //4
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao22" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường hẹp bên phải." />
+                </TableRow>
+                //5
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView26"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao23" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu đường hẹp hai bên." />
+                </TableRow>
+                //6
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bienbao24" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Báo hiệu giảm tốc độ" />
+                </TableRow>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

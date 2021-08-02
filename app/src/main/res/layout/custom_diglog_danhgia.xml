@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/custom_danhgia"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_margin="60dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="22dp"
+            android:text="Thông báo"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Bạn đã chắc chắn với ý kiến đóng góp?"
+            android:textColor="#000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dongydanhgia"
+                android:layout_width="108dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Đồng ý"
+                android:textColor="#275ee9" />
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="53.30dp"
+                android:layout_centerInParent="true"
+                android:background="#000" />
+
+            <Button
+                android:id="@+id/btn_huydanhgia"
+                android:layout_width="108dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Hủy"
+                android:textColor="#275ee9" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
